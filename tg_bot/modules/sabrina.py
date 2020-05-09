@@ -272,7 +272,7 @@ __help__ = """
 
 """
 
-__mod_name__ = "Lone Wolf"
+__mod_name__ = "SpiderMan"
 
 OWO_HANDLER = DisableAbleCommandHandler("owo", owo, admin_ok=True)
 STRETCH_HANDLER = DisableAbleCommandHandler("stretch", stretch)
