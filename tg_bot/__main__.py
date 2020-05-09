@@ -27,12 +27,14 @@ def escape_html(word):
     return escape(word)
 
 PM_START_TEXT = """
+Hey *{}* , My Name Is  *SpiderMan*  - I'm Here To Help You Manage Your Groups . Hit /help To Find Out More About How To Use My Full Potential Use!
 
-Hey *{}* , My Name Is Lone Wolf - I'm Here To Help You Manage Your Group[s] . Hit /help To Find Out More About How To Use My Full Potential Use!
+Made With Love  And Maintained By [This Awesome Person](t.me/Spyder_xD). 
 
-Made With Love  And Maintained By [This Awesome Person](t.me/Unknown_Hacker_X) .
+Special Thanks To [This Noob](t.me/Unknown_Hacker_X) . 
 
-Want To Add Me Into Your Chats? [Click Here!](http://telegram.me/Lone_Wolf_RoBot?startgroup=botstart)
+Want To Add Me Into Your Chats? [Click Here!](http://telegram.me/SpiderMan_ProBot?startgroup=botstart) 
+
 """
 
 
@@ -40,7 +42,7 @@ Want To Add Me Into Your Chats? [Click Here!](http://telegram.me/Lone_Wolf_RoBot
 
 HELP_STRINGS = """
 
-Hey! My name Is Lone Wolf . I Am A Group Management Bot, Here To Help You Get Around And Keep The Order In Your Groups!
+Hey! My name Is *SpiderMan* . I Am A Group Management Bot, Here To Help You Get Around And Keep The Order In Your Groups!
 I Have Lots Of Handy Features, Such As Flood Control, A Warning System, A Note Keeping System, And Even Predetermined Replies On Certain Keywords.
 
 *Helpful* *Commands* :
@@ -48,7 +50,7 @@ I Have Lots Of Handy Features, Such As Flood Control, A Warning System, A Note K
 - /help: Sends This message; I'll Tell You More About Myself!
 - /donate: Gives You Info On How To Support Me And My Creator.
 
-If you have any bugs or questions on how to use me, head to [Support Group](t.me/Sabrina_RoBotChat) . 
+If you have any bugs or questions on how to use me, head to [Support Group](t.me/spiderbotsupport) . 
  All commands can be used with the following: / !
 
 {}
@@ -166,10 +168,10 @@ def send_start(bot, update):
                 
     keyboard = [[
         InlineKeyboardButton(text=tld(chat.id, '🥳Add To Group'),
-                             url="https://t.me/Lone_Wolf_RoBot?startgroup=true"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")
+                             url="https://t.me/SpiderMan_ProBot?startgroup=true"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")
         ]]
     keyboard += [[
-        InlineKeyboardButton(text=tld(chat.id, '👥 Support Group'), url="https://t.me/Sabrina_RoBotChat")
+        InlineKeyboardButton(text=tld(chat.id, '👥 Support Group'), url="https://t.me/spiderbotsupport")
     ]]
 
     update.effective_message.reply_text(
